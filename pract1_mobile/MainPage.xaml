@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract1_mobile.MainPage">
+
+    <ContentPage.Content>
+        <Grid RowSpacing="{OnPlatform iOS=20,Android=20}">
+            <StackLayout Grid.Row="1">
+                <Image
+                    Source="log_image.png" 
+                    HeightRequest="150" 
+                    WidthRequest="150"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2">
+                <Entry
+                    x:Name="textEntry" TextChanged="OnTextChanged"
+                    Placeholder="Email"
+                    Keyboard="Email"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="3">
+                <Entry
+                    x:Name="passwordEntry" TextChanged="PasswordEntryTextChanged"
+                    Placeholder="Password"
+                    IsPassword="True"/>
+                <Button Text="Login" TextColor="Red" BorderColor="White" Clicked="OnButtonClicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
