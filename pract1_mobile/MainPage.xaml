@@ -4,29 +4,27 @@
              x:Class="pract1_mobile.MainPage">
 
     <ContentPage.Content>
-        <Grid RowSpacing="{OnPlatform iOS=20,Android=20}">
+        <Grid RowSpacing="{OnPlatform iOS=20,Android=10}">
             <StackLayout Grid.Row="1">
                 <Image
                     Source="log_image.png" 
                     HeightRequest="150" 
                     WidthRequest="150"
+                    HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    HorizontalOptions="Center"/>
+                    />
             </StackLayout>
-            
+
             <StackLayout Grid.Row="2">
                 <Entry
                     x:Name="textEntry" TextChanged="OnTextChanged"
                     Placeholder="Email"
                     Keyboard="Email"/>
-            </StackLayout>
-            
-            <StackLayout Grid.Row="3">
                 <Entry
                     x:Name="passwordEntry" TextChanged="PasswordEntryTextChanged"
                     Placeholder="Password"
                     IsPassword="True"/>
-                <Button Text="Login" TextColor="Red" BorderColor="White" Clicked="OnButtonClicked"/>
+                <Button Text="Login" TextColor="Red" BorderColor="Black" Clicked="OnButtonClicked"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
