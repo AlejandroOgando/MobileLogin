@@ -4,8 +4,8 @@ When the "Login" button is clicked the App makes sure that the user has introduc
 
 Here are some photos of the app running on Android:
 
-![alt text](https://github.com/AlejandroOgando/MobileLogin/blob/main/testing_photos/login1.jpeg)
+![alt text](https://github.com/AlejandroOgando/MobileLogin/blob/main/testing_photos/login_test.jpeg)
 
-![alt text](https://github.com/AlejandroOgando/MobileLogin/blob/main/testing_photos/login2.jpeg)
+![alt text](https://github.com/AlejandroOgando/MobileLogin/blob/main/testing_photos/login_test1.jpeg)
 
-![alt text](https://github.com/AlejandroOgando/MobileLogin/blob/main/testing_photos/login3.jpeg)
+![alt text](https://github.com/AlejandroOgando/MobileLogin/blob/main/testing_photos/login_test2.jpeg)
