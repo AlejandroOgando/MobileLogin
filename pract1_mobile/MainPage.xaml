@@ -13,15 +13,12 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     />
-            </StackLayout>
-
-            <StackLayout Grid.Row="2">
                 <Entry
-                    x:Name="textEntry" TextChanged="OnTextChanged"
+                    x:Name="usernameEntry"
                     Placeholder="Email"
                     Keyboard="Email"/>
                 <Entry
-                    x:Name="passwordEntry" TextChanged="PasswordEntryTextChanged"
+                    x:Name="passwordEntry"
                     Placeholder="Password"
                     IsPassword="True"/>
                 <Button Text="Login" TextColor="Red" BorderColor="Black" Clicked="OnButtonClicked"/>

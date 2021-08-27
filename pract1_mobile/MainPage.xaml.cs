@@ -10,23 +10,12 @@ namespace pract1_mobile
 {
     public partial class MainPage : ContentPage
     {
-        string emailDataEntry, passwordDataEntry;
         
         public MainPage()
         {
             InitializeComponent();
         }
-        void OnTextChanged(object sender, TextChangedEventArgs e)
-        {
-            emailDataEntry = e.NewTextValue;
-            
-        }
-
-        void PasswordEntryTextChanged(object sender, TextChangedEventArgs e)
-        {
-            passwordDataEntry = e.NewTextValue;
-        }
-
+       
         async void OnAlert()
         {
             await DisplayAlert("Aviso", "No pueden haber campos vacíos.", "OK");
@@ -34,19 +23,17 @@ namespace pract1_mobile
 
         async void LoginWelcome()
         {
-            await DisplayAlert("Bienvenido", "Hola, "+ emailDataEntry, "OK");
+            await DisplayAlert("Bienvenido", $"Hola, {usernameEntry.Text}", "OK");
         }
         void OnButtonClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(emailDataEntry) || string.IsNullOrWhiteSpace(passwordDataEntry))
+            if (string.IsNullOrWhiteSpace(usernameEntry.Text) || string.IsNullOrWhiteSpace(passwordEntry.Text))
             {
                 OnAlert();
-                
             }
             else
             {
                 LoginWelcome();
-                
             }
             
 
