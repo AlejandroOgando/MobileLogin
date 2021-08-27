@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,14 +17,14 @@ namespace pract1_mobile
             InitializeComponent();
         }
        
-        async void OnAlert()
+        void OnAlert()
         {
-            await DisplayAlert("Aviso", "No pueden haber campos vacíos.", "OK");
+            UserDialogs.Instance.Toast("No pueden haber campos vacíos.", TimeSpan.FromSeconds(3));
         }
 
-        async void LoginWelcome()
+        void LoginWelcome()
         {
-            await DisplayAlert("Bienvenido", $"Hola, {usernameEntry.Text}", "OK");
+            UserDialogs.Instance.Toast($"Bienvenido, {usernameEntry.Text}",TimeSpan.FromSeconds(3));
         }
         void OnButtonClicked(object sender, EventArgs e)
         {
@@ -35,8 +36,6 @@ namespace pract1_mobile
             {
                 LoginWelcome();
             }
-            
-
         }
 
         
